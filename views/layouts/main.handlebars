@@ -3,11 +3,36 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>React Tweets</title>
+    <title>Tweets Data</title>
+    <link rel="img" type="image/png" href="/public/img/Twitter_Logo_Blue.png">
+
+</h1>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-  
+
+      <div class="container">
+        <div class="page-header">
+          <div class="search-container">
+            <form class="example" style="margin:auto;max-width:350px">
+              {{!-- <input type="text" placeholder="Search.." name="search2"> --}}
+
+              <input class="search-input" type="text" id="search-query" placeholder="Search Twitter" name="q" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-expanded="false" aria-owns="typeahead-dropdown-1">
+                {{!--  <span class="search-icon js-search-action">
+                   <button type="submit" class="icon icon-search" tabindex="-1">
+                      <span class="visuallyhidden">Search Twitter</span>
+                   </button>
+                 </span> --}}
+                 <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+
+            {{!--  <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+             </form> --}}
+          </div>
+         </div>
+
     {{{ body }}}
     
     <footer>
@@ -16,7 +41,7 @@
       <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://scotch.io/tutorials/javascript/learning-react-building-a-real-time-node-and-react-application" data-text="Learning React: Building A Real-Time Node and React Application" data-via="scotch_io" data-count="none" data-hashtags="javascript">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     </footer>
-    
+    </div>
     <script src="https://cdn.socket.io/socket.io-1.1.0.js"></script>
     <script src="js/bundle.js"></script>
 
