@@ -148,6 +148,7 @@ module.exports = TweetsApp = React.createClass({
 
   // Called directly after component rendering, only on client
   componentDidMount: function(){
+    console.log('me');
 
     // Preserve self reference
     var self = this;

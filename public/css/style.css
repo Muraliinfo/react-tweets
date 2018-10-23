@@ -1,277 +1,232 @@
-*
-{
+* {
     box-sizing: border-box;
 }
 
-body
-{
-    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0 0 40px 0;
-
     color: white;
     background: #2c3e50;
 }
 
-footer
-{
+footer {
     position: fixed;
     z-index: 999;
     bottom: 0;
-
     width: 100%;
     padding: 20px;
-
     background: #abd9ff;
 }
 
 footer a,
-footer span
-{
+footer span {
     font-size: 12px;
     font-weight: bold;
 }
 
-footer a.link-back
-{
+footer a.link-back {
     text-decoration: none;
-
     color: #2c3e50;
 }
 
-footer .twitter-share-button
-{
+footer .twitter-share-button {
     margin-right: 10px;
 }
 
-footer span.update-message
-{
+footer span.update-message {
     padding-top: 3px;
-
     color: #2c3e50;
 }
 
 footer .twitter-share-button,
-footer .update-message
-{
+footer .update-message {
     float: right;
 }
 
-.loader
-{
+.loader {
     text-align: center;
 }
 
-.loader img
-{
+.loader img {
     max-height: 0;
     margin: 0;
-
     -webkit-transition: 1s all ease;
-       -moz-transition: 1s all ease;
-        -ms-transition: 1s all ease;
-         -o-transition: 1s all ease;
-            transition: 1s all ease;
+    -moz-transition: 1s all ease;
+    -ms-transition: 1s all ease;
+    -o-transition: 1s all ease;
+    transition: 1s all ease;
 }
 
-.loader.active img
-{
+.loader.active img {
     max-height: 50px;
     margin: 10px auto 20px;
 }
 
-.notification-bar
-{
+.notification-bar {
     font-size: 13px;
     font-weight: bold;
-
     position: fixed;
     top: 0px;
-
     width: 100%;
-
     -webkit-transition: 300ms top ease;
-       -moz-transition: 300ms top ease;
-        -ms-transition: 300ms top ease;
-         -o-transition: 300ms top ease;
-            transition: 300ms top ease;
+    -moz-transition: 300ms top ease;
+    -ms-transition: 300ms top ease;
+    -o-transition: 300ms top ease;
+    transition: 300ms top ease;
     text-align: center;
-
     color: #2c3e50;
     background: white;
 }
 
-.notification-bar.active
-{
+.notification-bar.active {
     top: 0;
 }
 
-.notification-bar a
-{
+.notification-bar a {
     color: #2c3e50;
 }
 
-.tweets
-{
+.tweets {
     max-width: 600px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.tweet
-{
+.tweet {
     position: relative;
-
     display: block;
     overflow: hidden;
-
     max-height: 0px;
     margin: 0;
-
     list-style-type: none;
-
     color: #2c3e50;
     border-radius: 3px;
     background: white;
     box-shadow: 0 3px 0 #eee;
 }
 
-.tweet.active
-{
+.tweet.active {
     max-height: 125px;
     margin: 20px 0;
-
     -webkit-transition: 1s all ease;
-       -moz-transition: 1s all ease;
-        -ms-transition: 1s all ease;
-         -o-transition: 1s all ease;
-            transition: 1s all ease;
+    -moz-transition: 1s all ease;
+    -ms-transition: 1s all ease;
+    -o-transition: 1s all ease;
+    transition: 1s all ease;
 }
 
-.tweet .avatar
-{
+.tweet .avatar {
     position: relative;
-
     display: inline-block;
     float: left;
-
     width: 48px;
     margin: 10px;
-
     border: 2px solid #ccc;
     border-radius: 48px;
 }
 
-.tweet blockquote
-{
+.tweet blockquote {
     font-size: 14px;
-
     display: inline-block;
     float: right;
-
     width: calc(100% - 72px);
     margin: 0;
     padding: 10px;
 }
 
-.tweet blockquote cite
-{
+.tweet blockquote cite {
     font-weight: bold;
     font-style: normal;
 }
 
-.tweet blockquote cite a
-{
+.tweet blockquote cite a {
     display: inline-block;
-
     margin-right: 5px;
-
     text-decoration: none;
-
     color: #1abc9c;
 }
 
-.tweet blockquote cite a:hover
-{
+.tweet blockquote cite a:hover {
     text-decoration: underline;
 }
 
-.tweet blockquote .screen-name
-{
+.tweet blockquote .screen-name {
     font-size: 13px;
     font-weight: normal;
-
     color: #ccc;
 }
 
-.tweet blockquote .content
-{
+.tweet blockquote .content {
     display: block;
     clear: left;
-
     margin-top: 5px;
 }
 
 .tweet:before,
-.tweet:after
-{
+.tweet:after {
     display: table;
-
     content: ' ';
 }
 
-.tweet:after
-{
+.tweet:after {
     clear: both;
 }
 
-.page-header
-{
+.page-header {
     background: #1DA1F2 !important;
     padding: 1px 0px;
     margin: 41px 0px;
 }
 
 .search-input {
-background-color: #f5f8fa;
-border-radius: 21px;
-border: 1px solid #e6ecf0;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-color: #14171a;
-display: block;
-font-size: 12px;
-height: 36px;
-line-height: 16px;
-padding: 8px 32px 8px 12px;
-transition: all .2s ease-in-out;
-width: 80%;
-margin: 5px 130%;
+    background-color: #f5f8fa;
+    border-radius: 21px;
+    border: 1px solid #e6ecf0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #14171a;
+    display: block;
+    font-size: 12px;
+    height: 36px;
+    line-height: 16px;
+    padding: 8px 32px 8px 12px;
+    transition: all .2s ease-in-out;
+    width: 80%;
+    margin: 5px 130%;
 }
 
-form.example button {
+form.example .button_search {
     float: left;
-    width: 20%;
-    padding: 10px;
+    width: 12%;
+    padding: 6px;
     background: #2196F3;
     color: white;
-    font-size: 17px;
+    font-size: 14px;
     border: 1px solid grey;
     border-left: none;
     cursor: pointer;
-    margin: -34px 186%;
+    margin: -38px 197%;
+    border-radius: 20px;
 }
 
-  form.example button:hover {
-      background: #0b7dda;
-  }
+.load_more {
+    background-color: #31475d;
+    padding: 10px;
+    width: 20%;
+    color: white;
+    border: solid 1px grey;
+}
 
-  form.example::after {
-      content: "";
-      clear: both;
-      display: table;
-  }
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 .search-icon .Icon {
     background-color: transparent;
@@ -279,10 +234,12 @@ form.example button {
     height: auto;
     width: auto;
 }
+
 .Icon--medium {
     font-size: 18px;
     line-height: 18px;
 }
+
 .Icon {
     background: transparent;
     display: inline-block;
@@ -290,6 +247,7 @@ form.example button {
     vertical-align: baseline;
     position: relative;
 }
+
 
 /* .search-icon {
     cursor: pointer;
@@ -311,14 +269,16 @@ form.example button {
     width: 26px;
 } */
 
+
 /* form.example input[type=text] {
     float: left;
     height: 33px;
     margin: 7px 15px 0 0;
     font-size: 12px;
     width: 221px; */
-    
-    /* background-color: #f5f8fa;
+
+
+/* background-color: #f5f8fa;
     border-radius: 21px;
     border: 1px solid #e6ecf0;
     -moz-box-sizing: border-box;
@@ -331,7 +291,10 @@ form.example button {
     padding: 8px 32px 8px 12px;
     transition: all .2s ease-in-out;
     width: 100%; */
+
+
 /* } */
+
 
 /* .search-icon {
     cursor: pointer;
@@ -362,6 +325,7 @@ form.example button {
     position: relative;
 }  */
 
+
 /* form.example button:hover {
     background: #0b7dda;
 }
@@ -371,6 +335,7 @@ form.example::after {
     clear: both;
     display: table;
 } */
+
 
 /* .container .page-header .search-container button {
     float: right;
@@ -387,25 +352,18 @@ form.example::after {
     background: #ccc;
   } */
 
-@media (max-width: 650px)
-{
-    footer span.update-message
-    {
+@media (max-width: 650px) {
+    footer span.update-message {
         display: none;
     }
 }
 
-@media (max-width: 500px)
-{
-    footer a.link-back
-    {
+@media (max-width: 500px) {
+    footer a.link-back {
         font-size: 0;
     }
-    footer a:after
-    {
+    footer a:after {
         font-size: 12px;
-
         content: '← Back To Learning React';
-
     }
 }
