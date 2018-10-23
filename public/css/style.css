@@ -188,7 +188,7 @@ footer .update-message {
     color: #14171a;
     display: block;
     font-size: 12px;
-    height: 36px;
+    height: 34px;
     line-height: 16px;
     padding: 8px 32px 8px 12px;
     transition: all .2s ease-in-out;
@@ -197,17 +197,29 @@ footer .update-message {
 }
 
 form.example .button_search {
+
     float: left;
     width: 12%;
-    padding: 6px;
-    background: #2196F3;
+    padding: 4px;
+    background: #f5f8fa;
+    color: #1da1f2;
+    font-size: 19px;
+    border: 1px solid #f5f8fa;
+    border-left: none;
+    cursor: pointer;
+    margin: -39px 198%;
+    border-radius: 40px;
+/*     float: left;
+    width: 12%;
+    padding: 4px;
+    background: #1da1f2;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     border: 1px solid grey;
     border-left: none;
     cursor: pointer;
-    margin: -38px 197%;
-    border-radius: 20px;
+    margin: -36px 197%;
+    border-radius: 30px; */
 }
 
 .load_more {
@@ -218,114 +230,6 @@ form.example .button_search {
     border: solid 1px grey;
 }
 
-form.example button:hover {
-    background: #0b7dda;
-}
-
-form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.search-icon .Icon {
-    background-color: transparent;
-    color: #0099ff;
-    height: auto;
-    width: auto;
-}
-
-.Icon--medium {
-    font-size: 18px;
-    line-height: 18px;
-}
-
-.Icon {
-    background: transparent;
-    display: inline-block;
-    font-style: normal;
-    vertical-align: baseline;
-    position: relative;
-}
-
-
-/* .search-icon {
-    cursor: pointer;
-    display: block;
-    height: 26px;
-    position: absolute;
-    right: 3px;
-    top: 6px;
-    width: 26px;
-}
-
-.search-icon {
-    cursor: pointer;
-    display: block;
-    height: 26px;
-    position: absolute;
-    right: 3px;
-    top: 6px;
-    width: 26px;
-} */
-
-
-/* form.example input[type=text] {
-    float: left;
-    height: 33px;
-    margin: 7px 15px 0 0;
-    font-size: 12px;
-    width: 221px; */
-
-
-/* background-color: #f5f8fa;
-    border-radius: 21px;
-    border: 1px solid #e6ecf0;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    color: #14171a;
-    display: block;
-    font-size: 12px;
-    height: 32px;
-    line-height: 16px;
-    padding: 8px 32px 8px 12px;
-    transition: all .2s ease-in-out;
-    width: 100%; */
-
-
-/* } */
-
-
-/* .search-icon {
-    cursor: pointer;
-    display: block;
-    height: 26px;
-    position: absolute;
-    right: 3px;
-    top: 6px;
-    width: 26px;
-    margin: 39px 622px 0px 0px;
-}
-
-.search-icon .Icon {
-    background-color: transparent;
-    color: #0099ff;
-    height: auto;
-    width: auto;
-}
-.Icon--medium {
-    font-size: 18px;
-    line-height: 18px;
-}
-.Icon {
-    background: transparent;
-    display: inline-block;
-    font-style: normal;
-    vertical-align: baseline;
-    position: relative;
-}  */
-
-
 /* form.example button:hover {
     background: #0b7dda;
 }
@@ -335,22 +239,6 @@ form.example::after {
     clear: both;
     display: table;
 } */
-
-
-/* .container .page-header .search-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .container  .page-header .search-container button:hover {
-    background: #ccc;
-  } */
 
 @media (max-width: 650px) {
     footer span.update-message {

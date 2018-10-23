@@ -1,5 +1,6 @@
 var JSX = require('node-jsx').install(),
   React = require('react'),
+  // loadMore = React.createFactory(require('./components/loadMore.react')),
   TweetsApp = React.createFactory(require('./components/TweetsApp.react')),
   Tweet = require('./models/Tweet');
 
@@ -15,7 +16,7 @@ module.exports = {
           tweets: tweets
         })
       );
-
+// console.log("tweets-------------------------------------------------",tweets);
       // Render our 'home' template
       res.render('home', {
         markup: markup, // Pass rendered react markup
@@ -28,11 +29,22 @@ module.exports = {
   page: function(req, res) {
     // Fetch tweets by page via param
     Tweet.getTweets(req.params.page, req.params.skip, function(tweets) {
+      console.log("page-----------------------------------",tweets);
+
+      // Render as JSON
+      res.send(tweets);
+
+    });
+  },
+
+  loadMore: function(req, res) {
+    // Fetch tweets by page via param
+    Tweet.getTweets(req.params.page, req.params.skip, function(tweets) {
+      console.log("page-----------------------------------",tweets);
 
       // Render as JSON
       res.send(tweets);
 
     });
   }
-
 }

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tweets Data</title>
-    <link rel="img" type="image/png" href="/public/img/Twitter_Logo_Blue.png">
+    <link rel="img" type="image/png" src="/public/img/Twitter_Logo_Blue.png">
 
 </h1>
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -15,27 +15,15 @@
         <div class="page-header">
           <div class="search-container">
             <form class="example" style="margin:auto;max-width:350px">
-              {{!-- <input type="text" placeholder="Search.." name="search2"> --}}
-
               <input class="search-input" type="text" id="search-query" placeholder="Search Twitter" name="q" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-expanded="false" aria-owns="typeahead-dropdown-1">
-                {{!--  <span class="search-icon js-search-action">
-                   <button type="submit" class="icon icon-search" tabindex="-1">
-                      <span class="visuallyhidden">Search Twitter</span>
-                   </button>
-                 </span> --}}
                  <button type="submit" class="button_search"><i class="fa fa-search fa-1x"></i></button>
             </form>
-
-            {{!--  <form action="/action_page.php">
-              <input type="text" placeholder="Search.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-             </form> --}}
           </div>
          </div>
 
     {{{ body }}}
     <div style="text-align:center">
-    <button class="load_more" >Load More</button></div>
+    <button class="load_more" id="loadmore">Load More</button></div>
     <br/>
     <br/>    
     <br/>  

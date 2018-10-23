@@ -107,6 +107,7 @@ module.exports = TweetsApp = React.createClass({
 
   // Method to check if more tweets should be loaded, by scroll position
   checkWindowScroll: function(){
+    console.log("innnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn");
 
     // Get scroll pos & window data
     var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
@@ -115,7 +116,7 @@ module.exports = TweetsApp = React.createClass({
 
     // If scrolled enough, not currently paging and not complete...
     if(scrolled && !this.state.paging && !this.state.done) {
-
+console.log("SCROLLED:", scrolled,state);
       // Set application state (Paging, Increment page)
       this.setState({paging: true, page: this.state.page + 1});
 
@@ -136,6 +137,7 @@ module.exports = TweetsApp = React.createClass({
       count: 0,
       page: 0,
       paging: false,
+      limit: 5,
       skip: 0,
       done: false
     };
@@ -165,6 +167,7 @@ module.exports = TweetsApp = React.createClass({
     });
 
     // Attach scroll event to the window for infinity paging
+    console.log("scroll:------",this.checkWindowScroll);
     window.addEventListener('scroll', this.checkWindowScroll);
 
   },

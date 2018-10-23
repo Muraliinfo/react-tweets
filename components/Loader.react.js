@@ -2,6 +2,7 @@
 
 var React = require('react');
 
+console.log("loaderrrrrrrrrrrrrrrrr", this.props);
 module.exports = Loader = React.createClass({
   render: function(){
     return (
